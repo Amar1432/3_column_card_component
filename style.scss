@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+$orange: hsl(31, 77%, 52%);
+$cyan400: hsl(184, 100%, 22%);
+$cyan700: hsl(179, 100%, 13%);
+
+$white: hsla(0, 0%, 100%, 0.75);
+$gray: hsl(0, 0%, 95%);
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+  max-height: 100vh;
+  font-size: 15px;
+  background-color: $gray;
+  font-family: "Lexend Deca", sans-serif;
+
+  @media (max-width: 768px) {
+    min-height: 100vh;
+    padding: 30px;
+    margin: auto;
+
+  }
+
+  h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $gray;
+    padding: 0 25px 0;
+    font-size: 2.5rem;
+  }
+}
+
+main {
+  width: 60%;
+  margin: 18vh auto 10vh;
+  display: flex;
+
+  @media (max-width: 768px) {
+    display: inline-block;
+    width: 90%;
+    margin: 60px auto;
+  }
+}
+
+section {
+  width: 33.33%;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+section:nth-child(1) {
+  background-color: $orange;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  @media (max-width: 768px) {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
+}
+
+section:nth-child(2) {
+  background-color: $cyan400;
+}
+
+section:nth-child(3) {
+  background-color: $cyan700;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  @media (max-width: 768px) {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+img {
+  padding: 8px 25px;
+}
+
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  margin-left: 25px;
+  font-size: 0.8rem;
+}
+
+.orange {
+  color: $orange;
+}
+
+.cyan400 {
+  color: $cyan400;
+}
+
+.cyan700 {
+  color: $cyan700;
+}
+
+p {
+  color: $white;
+  padding: 0 25px 60px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
